@@ -12,9 +12,7 @@ export default function Home() {
         {session ? (
           <button onClick={() => signOut()}>Sign Out</button>
         ) : (
-          <button onClick={() => signIn("my-auth0", {
-            callbackUrl: `${window.location.origin}/app`,
-          })}>Sign In</button>
+          <button onClick={() => signIn("my-auth0")}>Sign In</button>
         )}
       </div>
     </div>
