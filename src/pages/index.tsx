@@ -12,7 +12,7 @@ export default function Home() {
         {session ? (
           <button onClick={() => signOut()}>Sign Out</button>
         ) : (
-          <button onClick={() => signIn("my-auth0")}>Sign In</button>
+          <button onClick={() => signIn("auth0")}>Sign In</button>
         )}
       </div>
     </div>
