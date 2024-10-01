@@ -11,11 +11,6 @@ export default NextAuth({
       clientId,
       clientSecret,
       issuer,
-      authorization: {
-        params: {
-          redirect_uri: `${process.env.NEXTAUTH_URL!}/callback/auth0`,
-        }
-      }
     }),
   ],
 });
